@@ -1,0 +1,35 @@
+.jav-mark { 
+    background: #fff200 !important; color: #000 !important; border-radius: 3px; 
+    padding: 0px 4px; cursor: pointer !important; font-weight: bold !important; 
+    display: inline-block; line-height: 1.4; user-select: all !important; text-decoration: none !important;
+}
+.mag-mark { background: #e0b3ff !important; color: #330066 !important; }
+#copy-tip {
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.8); color: white; padding: 10px 20px;
+    border-radius: 20px; z-index: 2147483647; display: none; font-size: 14px;
+}
+#jav-box {
+    position: fixed; right: 20px; top: 20px; background: white; border: 2px solid #0071e3; 
+    border-radius: 12px; box-shadow: 0 10px 50px rgba(0,0,0,0.4); z-index: 2147483647;
+    display: none; flex-direction: column; overflow: hidden; min-width: 380px; min-height: 450px;
+}
+#jav-hdr { 
+    padding: 12px 15px; background: #0071e3; color: white; 
+    display: flex; justify-content: space-between; align-items: center; cursor: move; 
+}
+#jav-close { 
+    background: white; color:#0071e3; border:none; border-radius:50%; 
+    width:24px; height:24px; cursor:pointer; font-weight:bold; 
+}
+.jav-edge { position: absolute; background: transparent; z-index: 2147483648; }
+.v-edge { cursor: ew-resize; top: 0; bottom: 0; width: 10px; }
+.h-edge { cursor: ns-resize; left: 0; right: 0; height: 10px; }
+#jav-resizer { 
+    width: 20px; height: 20px; position: absolute; right: 0; bottom: 0; 
+    cursor: nwse-resize; z-index: 2147483649; 
+}
+#jav-resizer::after { 
+    content: ""; position: absolute; right: 4px; bottom: 4px; border-style: solid; 
+    border-width: 0 0 12px 12px; border-color: transparent transparent #0071e3 transparent; 
+}
